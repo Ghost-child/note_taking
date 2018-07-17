@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#3ec8cf"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+    <TextView
+        android:id="@+id/txtViewTitle"
+        android:background="#3ec8cf"
+        android:text="VOTER SQLite"
+        android:textSize="40sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <RelativeLayout
+        android:id="@+id/linnia"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#282727"
+        android:layout_marginTop="200dp">
+
+
+        <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="35dp"
+        app:srcCompat="@drawable/person" />
+
+        <EditText
+            android:id="@+id/edtEnterName"
+            android:hint="Enter Name............."
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:layout_marginTop="20dp"
+            android:background="#2d2929"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/imageView"
+            android:layout_marginStart="29dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/identification" />
+        <EditText
+            android:id="@+id/edtID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter ID No............."
+            android:inputType="number"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/edtEnterName"/>
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/imageView2"
+            android:layout_marginStart="29dp"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/ken22"
+            android:layout_marginTop="30dp"/>
+        <EditText
+            android:id="@+id/edtCons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Constituency.."
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@id/imageView3"
+            android:layout_below="@id/edtID"
+            android:textColorHint="#ffffff"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"/>
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnSave"
+            android:background="#227793"
+            android:text="save"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp" />
+
+        <Button
+            android:id="@+id/btnView"
+            android:background="#87b553"
+            android:text="view"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:background="#227793"
+            android:text="find"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp" />
+        <Button
+            android:id="@+id/btnDelete"
+            android:background="#87b553"
+            android:text="rec"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginRight="10dp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

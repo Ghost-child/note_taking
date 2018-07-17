@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordsActivity">
+
+    <ScrollView
+        android:id="@+id/sc"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp">
+
+        <ListView
+            android:id="@+id/listViewVoters"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </ScrollView>
+
+
+    <EditText
+        android:id="@+id/edtDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sc"
+        android:hint="Enter ID_No to delete......"
+        android:background="#cc6b6b"
+        android:inputType="number"
+        android:textColorHint="#ffffff"
+        android:layout_above="@+id/ln" />
+
+    <LinearLayout
+        android:id="@+id/ln"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnNewUpdate"
+            android:text="UPDATE"
+            android:textSize="20sp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#ffffff"
+            android:background="#227793"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnNewDelete"
+            android:text="DELETE"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="15dp"
+            android:background="#87b553"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
